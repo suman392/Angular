@@ -1,0 +1,54 @@
+.container img {
+    margin-left: 400px;
+    width: 20%;
+    height: 10%;
+    margin-top: 50%;
+    
+}
+.container form {
+    padding: 20px;
+    margin-left: 400px;
+    margin-top: 180px;
+    width: 320px;
+    height: 300px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);
+    background: #ffffff;
+    
+}
+.login p {
+    font-family:sans-serif;
+    font-weight: 900;
+    font-size:20px ;
+}
+
+.login input{
+    padding:  15px;
+    width: 280px;
+    font-family: sans-serif;
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 10%);
+    }
+
+.login a {
+    font-family: sans-serif;
+    margin-left: 150px;
+    color: #2196f3;
+
+}
+
+.login button{
+    height: 100%;
+    padding: 10px 10px;  
+    font-family: sans-serif;
+    background-color: #2196f3;
+    border: none; 
+    position: absolute;
+    left:center;
+   
+    width: 320px;
+    max-height: 60px;
+    border: none;
+    border-radius: 0 0 2px 2px;
+    border-bottom-width: 7px;
+    margin-left: -20px;
+}
