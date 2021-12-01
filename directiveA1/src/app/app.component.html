@@ -1,0 +1,21 @@
+<!-- 1. Add A button which says 'Display Details
+2. Add a paragraph with an content of vour choice (e.a. 'Secret Password = tuna")
+3. Toggle the displaying of that with the button created in the first step.
+4. Log all button clicks in an array and output that array below the secret paragraph (maybe log a tim
+simply an incrementing number
+5. Starting at the 5th log item, give all future log items a blue background (via naStyle) and white colo
+Inaulass. -->
+
+<div>
+<!-- <button class="btn btn-success" (click)="showTopics = !showTopics">Display Details</button>
+<p *ngIf="showTopics"> hello, Lets learn about directives, oohhhyaaaa!</p> -->
+<button class="btn btn-success" (click)= 'onToggleDisplay()'>Display Details</button>
+<p *ngIf="showTopics"> hello, Lets learn about directives, oohhhyaaaa!</p>
+<div *ngFor=" let logItem of log ;
+index as indexOfelement;" 
+[ngStyle]=" getColor(indexOfelement)">{{logItem}}
+</div>
+</div>
+
+<!-- [ngStyle] = "{backgroundColor: logItem >=5 ? 'blue' : 'transparent'}" -->
+
