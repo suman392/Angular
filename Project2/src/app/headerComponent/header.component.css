@@ -1,0 +1,15 @@
+.head {
+    background-color: black;
+    height: 20px;
+}
+
+.book1 {
+    font-family: sans-serif !important;
+    font-size: 25px;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.book2 {
+    font-family: sans-serif;
+}
