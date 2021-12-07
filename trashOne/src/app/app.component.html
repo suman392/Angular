@@ -1,0 +1,30 @@
+<div>
+    <app-factory (medicineTruck)="medicineGate($event)" (electronicTruck)="electronicGate($event)" (foodTruck)="foodGate($event)"></app-factory>
+
+<div class="row">
+    <div class="col-md-4">
+        <h1>Medicine Store Room</h1>
+        <ul>
+            <li *ngFor="let med of medicineStore">
+                {{med}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h1>Electronics Store Room</h1>
+        <ul>
+            <li *ngFor=" let elect of electronicStore">
+                {{elect}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h1>Food Store Room</h1>
+        <ul>
+            <li *ngFor="let foo of foodStore">
+                {{foo}}
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
