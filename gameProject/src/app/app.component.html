@@ -1,0 +1,19 @@
+<div class="row">
+  <div> 
+    <app-game-control (genNumber)="numGate($event)"></app-game-control>
+  <div class="col-xs-6">
+    <ul>
+      <li *ngFor = "let oddNo of odd">
+        {{oddNo}}
+      </li>
+    </ul>
+  </div>
+  <div class="col-xs-6">  
+    <ul>
+      <li *ngFor ="let evenNo of even">
+        {{evenNo}}
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
