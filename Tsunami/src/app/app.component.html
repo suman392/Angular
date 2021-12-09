@@ -1,0 +1,26 @@
+
+<div class="row">
+  <p appHopeeveryone> Hope everyone is good!</p>
+<div>
+  <app-chennai (shipChennai)="portBlairGate($event)" (shipSoilder)="islandGate($event)"></app-chennai>
+  <br><br>
+<div class="col-md-4 doc">
+  <p> Doctors who reached to PortBlair</p>
+  <ul>
+    <li *ngFor = "let docs of portBlair">
+      {{docs}}
+    </li>
+  </ul>
+</div>
+<div class="col-md-4 sol">
+  <p>Number of soilders reached to Island</p>
+  <ul>
+    <li *ngFor = "let sol of island">
+      {{sol}}
+    </li>
+  </ul>
+  
+</div>
+</div>
+
+</div>
