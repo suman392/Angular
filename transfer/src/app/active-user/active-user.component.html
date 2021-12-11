@@ -1,0 +1,13 @@
+<div class="row">
+    <ul>
+        <li *ngFor = "let act of activeList ; let i=index">
+            
+            <div class="col-md-6">
+                {{act}}
+            </div>
+            <div class="col-md-6">
+                <a href="#" (click)="setInactive(i)" >Set to Inactive</a>
+            </div>
+        </li>
+    </ul>
+</div>

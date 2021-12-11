@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-6">
+    <input type="text" class="form-control" placeholder="Username" [(ngModel)]="userName"><br>
+    <button class="btn btn-info" (click)="activeTrans()">Click Me</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <app-active-user [activeList]="activePastore" (activeTruck)="activeGate($event)">
+    </app-active-user>
+  </div>
+  <div class="col-md-6">
+    <app-inactive-user [inactiveList]="inactivePastore" (inactiveTruck)="inactiveGate($event)">
+    </app-inactive-user>
+  </div>
+</div>
