@@ -1,0 +1,36 @@
+<div class="container"></div>
+<div class="row">
+  <div class="col-xs-12 col-sm-8 col-md-8" >
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="/">Home</a></li> 
+      
+      <li role="presentation" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions] = "{exact : true}">
+        <a routerLink="/">Home</a></li>  <!--using this so that not to reload the page. -->
+
+      <li role="presentation" 
+        routerLinkActive = "active" >
+        <a routerLink="service">Service</a></li>
+
+      <li role="presentation" 
+        routerLinkActive = "active" >
+        <a routerLink="user">User</a></li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-sm-8">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<!-- <div class="row">
+  <div class="col-xs-12 col-md-8 col-sm-8">
+    <app-service></app-service>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-sm-8">
+    <app-user></app-user>
+  </div>
+</div> -->
